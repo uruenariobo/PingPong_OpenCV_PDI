@@ -249,6 +249,7 @@ def main():
         _, frame = cap.read()
         # 4. Convert BGR to HSV
         hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+
         # 5. Umbralización: Se definen los rangos de color (Azul y rojo).
         # Define range of Blue color in HSV
         lower_blue = np.array([100, 82, 42])
@@ -290,11 +291,15 @@ def main():
         except:
             print("error")
 
+        # 8. Reflexión de video. -------------------------------------------------------------------------
+
         anchomitad = frame.shape[1] // 2  # Ubicamos el centro del ancho para usarlo como eje de reflexión.
         frameEspejo = cv.flip(frame, anchomitad)  # Aplicamos la reflexion usando como eje la mitad del ancho.
         cv.imshow('VideoOriginal', frameEspejo)  # Se muestra el video de la camara posterior a la reflexión con los
 
         # círculos en el centro de los contornos.
+
+        # 9. Actualización posición de sprites y puntajes. ---------------------------------------------------------
 
         # Se mueven los objetos raquetas de acuerdo a la detección del movimiento de los contornos.
         jugador1.rect.centery = ny
