@@ -15,11 +15,9 @@ PingPong game using pygame in python and opencv
 ### Teacher:
 - David Fernández - david.fernandez@udea.edu.co
 
-## steps to run:
-1) Install Requirements:
-    - pip install -r requirements.txt
-2) run the pingpong.py file using python(example: python pingpong.py)
-3) enjoy the game :)
+## Steps to run:
+1. Run the pingpong.py file using python(example: python pingpong.py)
+2. Enjoy the game :)
 
 ## Example
 ![](assets/pingpong.gif) 
