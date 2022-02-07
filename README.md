@@ -20,4 +20,4 @@ PingPong game using pygame in python and opencv
 2. Enjoy the game :)
 
 ## Example
-![](assets/pingpong.gif) 
+![](assets/pingpong1.gif)
